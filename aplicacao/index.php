@@ -62,21 +62,21 @@ include_once __DIR__ . '/compunents/header.php'
 
         <div class="row">
             <div class="locais-col">
-                <img src="./src/Pages/HomePage/img/Serra_leba2.jpg">
+                <img src="/recursos/img/Serra_leba2.jpg">
                 <div class="layer">
-                    <a href="./src/Pages/HomePage/Aplicacao/locais.php"><h3>Serra da Leba</h3></a>
+                    <a href="/aplicacao/locais.php"><h3>Serra da Leba</h3></a>
                 </div>
             </div>
             <div class="locais-col">
-                <img src="./src/Pages/HomePage/img/tundavala3.jpg">
+                <img src="/recursos/img/tundavala3.jpg">
                 <div class="layer">
-                    <a href="./src/Pages/HomePage/Aplicacao/locais.php"><h3>Tundavala</h3></a>
+                    <a href="/aplicacao/locais.php"><h3>Tundavala</h3></a>
                 </div>
             </div>
             <div class="locais-col">
-                <img src="./src/Pages/HomePage/img/Cristo_Rei2.jpg">
+                <img src="/recursos/img/Cristo_Rei2.jpg">
                 <div class="layer">
-                    <a href="./src/Pages/HomePage/Aplicacao/locais.php"><h3>Cristo Rei</h3></a>
+                    <a href="/aplicacao/locais.php"><h3>Cristo Rei</h3></a>
                 </div>
             </div>
         </div>
@@ -90,21 +90,21 @@ include_once __DIR__ . '/compunents/header.php'
     
         <div class="row">
             <div class="aloj-col">
-                    <img src="./src/Pages/HomePage/img/casper-lodge.jpg">
+                    <img src="/recursos/img/casper-lodge.jpg">
                 <div class="layer">
-                    <a href="./src/Pages/HomePage/Aplicacao/alojamento.php"><h3>Casper<br>Lodge</h3></a>
+                    <a href="/aplicacao/alojamento.php"><h3>Casper<br>Lodge</h3></a>
                 </div>
             </div>
             <div class="aloj-col">
-                <img src="./src/Pages/HomePage/img/pululukwa2.jpg">
+                <img src="/recursos/img/pululukwa2.jpg">
                 <div class="layer">
-                    <a href="./src/Pages/HomePage/Aplicacao/alojamento.php"><h3>Pululukwa<br>Lodge</h3></a>
+                    <a href="/aplicacao/alojamento.php"><h3>Pululukwa<br>Lodge</h3></a>
                 </div>
             </div>
             <div class="aloj-col">
-                <img src="./src/Pages/HomePage/img/hotel-serra.jpg">
+                <img src="/recursos/img/hotel-serra.jpg">
                 <div class="layer">
-                    <a href="./src/Pages/HomePage/Aplicacao/alojamento.php"><h3>Hotel<br>Serra da Chela</h3></a>
+                    <a href="/aplicacao/alojamento.php"><h3>Hotel<br>Serra da Chela</h3></a>
                 </div>
             </div>
         </div>
@@ -119,17 +119,17 @@ include_once __DIR__ . '/compunents/header.php'
 
     <div class="row">
         <div class="eventos-col">
-            <img src="./src/Pages/HomePage/img/corridas-1.jpg">
+            <img src="/recursos/img/corridas-1.jpg">
             <h3>Automobilismo</h3>
             <p>Prova Nacional de Automobilismo e Motociclismo</p>
         </div>
         <div class="eventos-col">
-            <img src="./src/Pages/HomePage/img/nossa-senhora-do-monte-1.jpg">
+            <img src="/recursos/img/nossa-senhora-do-monte-1.jpg">
             <h3>Peregrinação à Capela da Nossa Senhora do Monte</h3>
             <p>Peregrinação Religiosa que começa no centro da cidade e termina no topo da montanha onde se encontra a Capela da Nossa Senhora do Monte.</p>
         </div>
         <div class="eventos-col">
-            <img src="./src/Pages/HomePage/img/feira-gado.jpg">
+            <img src="/recursos/img/feira-gado.jpg">
             <h3>Feira do Gado</h3>
             <p>Feira do Gado, onde os vários fazendeiros expõem as suas posses e as leiloam.</p>
         </div>
