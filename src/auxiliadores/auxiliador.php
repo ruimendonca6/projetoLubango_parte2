@@ -1,7 +1,7 @@
 <?php
 session_start();
 # INICILIAZAR O REPOSITÓRIO PDO UTILIZADOR
-require_once __DIR__ . '/../../src/infraestrutura/repositorio-utilizador.php'
+require_once __DIR__ . '/../../src/infraestrutura/repositorio-utilizador.php';
 
 /**
  *  FUNÇÃO PARA INFORMAR SE O UTILIZADOR ESTÁ AUTENTICADO
