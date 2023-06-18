@@ -3,19 +3,7 @@
 <body>
     <div container>
         <section class="header">
-            <nav>
-                <a href="./index.html"><img class="logo" src="./src/Pages/HomePage/img/logo_angola2.png" /></a>
-                <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="/index.php">HOME</a></li>
-                        <li><a href="./src/Pages/HomePage/Html/locais.html">LOCAIS TURÍSTICOS</a></li>
-                        <li><a href="./src/Pages/HomePage/Html/alojamento.html">ALOJAMENTOS E RESTAURANTES</a></li>
-                        <li><a href="./src/Pages/HomePage/Html/blog.html">BLOG</a></li>
-                    </ul>
-                </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
-            </nav>
+            
 
             <div class="text-box">
                 <h1>Visite o Lubango</h1>
@@ -69,25 +57,25 @@
 
             <div class="row">
                 <div class="locais-col">
-                    <img src="./src/Pages/HomePage/img/Serra_leba2.jpg">
+                    <img src="/recursos/img/Serra_leba2.jpg">
                     <div class="layer">
-                        <a href="./src/Pages/HomePage/Html/locais.html">
+                        <a href="/src/Aplicacao/locais.php">
                             <h3>Serra da Leba</h3>
                         </a>
                     </div>
                 </div>
                 <div class="locais-col">
-                    <img src="./src/Pages/HomePage/img/tundavala3.jpg">
+                    <img src="/recursos/img/tundavala3.jpg">
                     <div class="layer">
-                        <a href="./src/Pages/HomePage/Html/locais.html">
+                        <a href="/src/Aplicacao/locais.php">
                             <h3>Tundavala</h3>
                         </a>
                     </div>
                 </div>
                 <div class="locais-col">
-                    <img src="./src/Pages/HomePage/img/Cristo_Rei2.jpg">
+                    <img src="./recursos/img/Cristo_Rei2.jpg">
                     <div class="layer">
-                        <a href="./src/Pages/HomePage/Html/locais.html">
+                        <a href="/src/Aplicacao/locais.php">
                             <h3>Cristo Rei</h3>
                         </a>
                     </div>
@@ -101,29 +89,29 @@
             <h1>Alojamentos e Restaurantes</h1>
             <p>Estes são considerados os três melhores alojamentos e restaurantes da cidade.<br>Para ficar a conhecer
                 melhor estes e outros alojamentos ao seu dispor é só consultar <a
-                    href="./src/Pages/HomePage/Html/alojamento.html"><u>ALOJAMENTOS E RESTAURANTES.</u></a></p>
+                    href="/src/Aplicacao/alojamento.php"><u>ALOJAMENTOS E RESTAURANTES.</u></a></p>
 
             <div class="row">
                 <div class="aloj-col">
-                    <img src="./src/Pages/HomePage/img/casper-lodge.jpg">
+                    <img src="/recursos/img/casper-lodge.jpg">
                     <div class="layer">
-                        <a href="./src/Pages/HomePage/Html/alojamento.html">
+                        <a href="/src/Aplicacao/alojamento.php">
                             <h3>Casper<br>Lodge</h3>
                         </a>
                     </div>
                 </div>
                 <div class="aloj-col">
-                    <img src="./src/Pages/HomePage/img/pululukwa2.jpg">
+                    <img src="/recursos/img/pululukwa2.jpg">
                     <div class="layer">
-                        <a href="./src/Pages/HomePage/Html/alojamento.html">
+                        <a href="/src/Aplicacao/alojamento.php">
                             <h3>Pululukwa<br>Lodge</h3>
                         </a>
                     </div>
                 </div>
                 <div class="aloj-col">
-                    <img src="./src/Pages/HomePage/img/hotel-serra.jpg">
+                    <img src="/recursos/img/hotel-serra.jpg">
                     <div class="layer">
-                        <a href="./src/Pages/HomePage/Html/alojamento.html">
+                        <a href="/src/Aplicacao/alojamento.php">
                             <h3>Hotel<br>Serra da Chela</h3>
                         </a>
                     </div>
@@ -141,18 +129,18 @@
 
             <div class="row">
                 <div class="eventos-col">
-                    <img src="./src/Pages/HomePage/img/corridas-1.jpg">
+                    <img src="/recursos/img/corridas-1.jpg">
                     <h3>Automobilismo</h3>
                     <p>Prova Nacional de Automobilismo e Motociclismo</p>
                 </div>
                 <div class="eventos-col">
-                    <img src="./src/Pages/HomePage/img/nossa-senhora-do-monte-1.jpg">
+                    <img src="/recursos/img/nossa-senhora-do-monte-1.jpg">
                     <h3>Peregrinação à Capela da Nossa Senhora do Monte</h3>
                     <p>Peregrinação Religiosa que começa no centro da cidade e termina no topo da montanha onde se
                         encontra a Capela da Nossa Senhora do Monte.</p>
                 </div>
                 <div class="eventos-col">
-                    <img src="./src/Pages/HomePage/img/feira-gado.jpg">
+                    <img src="/recursos/img/feira-gado.jpg">
                     <h3>Feira do Gado</h3>
                     <p>Feira do Gado, onde os vários fazendeiros expõem as suas posses e as leiloam.</p>
                 </div>
@@ -168,3 +156,5 @@
                 target="_blank" class="hero-btn">Contacte-nos</a>
         </section>
     </div>
+
+    <php
