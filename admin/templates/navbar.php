@@ -7,7 +7,7 @@
             <li class="active"><a href="/admin/index.php">HOME</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="/admin/utilizador.php"><span class="glyphicon glyphicon-user"></span>CRIAR CONTA</a></li>
+            <li><a href="/aplicacao/registo.php"><span class="glyphicon glyphicon-user"></span>CRIAR CONTA</a></li>
             <li><a href="/aplicacao/login.php"><span class="glyphicon glyphicon-user"></span>LOGIN</a></li>
         </ul>
     </div>

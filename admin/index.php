@@ -10,7 +10,7 @@ $utilizadores = lerTodosUtilizadores();
 
 # CARREGA O CABECALHO PADRÃO COM O TÍTULO
 $titulo = ' - Painel de Administração';
-require_once __DIR__ . '/templates/cabecalho.php';
+require_once __DIR__ . '/templates/header.php';
 ?>
 
 <main class="bg-light">
