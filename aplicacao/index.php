@@ -2,7 +2,7 @@
 
 # CARREGAR O CABEÇALHO
 $titulo = '- Aplicação';
-include_once __DIR__ . '/compunents/header.php'
+include_once __DIR__ . '/compunents/navbar.php'
 ?>
 
 
@@ -11,19 +11,7 @@ include_once __DIR__ . '/compunents/header.php'
 
   <body>
     <section class="header">
-      <nav>
-        <a href="./index.php"><img class="logo" src="/recursos/img/logo_angola2.png"/></a>
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="./index.php">HOME</a></li>
-            <li><a href="/aplicacao/locais.php">LOCAIS TURÍSTICOS</a></li>
-            <li><a href="/aplicacao/alojamento.php">ALOJAMENTOS E RESTAURANTES</a></li>
-            <li><a href="/aplicacao/blog.php">BLOG</a></li>
-          </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
+      
 
     <div class="text-box">
         <h1>Visite o Lubango</h1>
