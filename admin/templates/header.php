@@ -13,3 +13,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
+
+<body class="container bg-light">
+  <div class="pt-1 ">
+    <div class="p-5 mb-2 bg-info text-white">
+      <h1>Registo de Utilizadores</h1>
+    </div>
+  
