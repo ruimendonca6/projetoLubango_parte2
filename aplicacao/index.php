@@ -1,57 +1,28 @@
 <?php
+# Header
+include_once __DIR__ . "/compunents/header.php"
+
+# Navbar
+require_once __DIR__ . "/compunents/navbar.php"
 ?>
 
 
    
-<!DOCTYPE html>
-<html lang="pt-pt">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <title>Cidade do Lubango</title>
-</head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="/aplicacao/index.php"><img src="/recursos/img/logo_angola2.png" alt="Logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/aplicacao/index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/aplicacao/locais.php">LOCAIS TURÍSTICOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/aplicacao/alojamento.php">ALOJAMENTOS E RESTAURANTES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/aplicacao/blog.php">BLOG</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <section class="header">
+    <div class="container-fluid"><img src="/recursos/img/cidade-capa.jpg" height="100" width="100"></div>
+    <div class="text-box">
+    <h1>Visite o Lubango</h1>
+    <p>Venha conhecer a Cidade do Conhecimento e a sua rica cultura.</p>
+    <a href="google.com/maps/place/Lubango,+Angola/@-14.9106332,13.5285005,13z/data=!3m1!4b1!4m6!3m5!1s0x1ba34b79115f7f23:0xcaa20e87e439fb10!8m2!3d-14.9186136!4d13.5321234!16zL20vMDJuODVq?entry=ttu" class="btn btn-primary">Localização</a>
+</div>
   </header>
 
-  <section class="header">
-    <div class="container">
-      <div class="text-box">
-        <h1>Visite o Lubango</h1>
-        <p>Venha conhecer a Cidade do Conhecimento e a sua rica cultura.</p>
-        <a href="google.com/maps/place/Lubango,+Angola/@-14.9106332,13.5285005,13z/data=!3m1!4b1!4m6!3m5!1s0x1ba34b79115f7f23:0xcaa20e87e439fb10!8m2!3d-14.9186136!4d13.5321234!16zL20vMDJuODVq?entry=ttu" class="btn btn-primary">Localização</a>
-      </div>
-    </div>
-  </section>
+  
+   
 
   <section class="cidade">
     <div class="container">
@@ -177,30 +148,11 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h3>About Us</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum purus vitae neque efficitur, ut
-            faucibus nunc pharetra.</p>
-        </div>
-        <div class="col-md-6">
-          <h3>Contact</h3>
-          <ul>
-            <li>Email: info@example.com</li>
-            <li>Phone: +1 234 567 890</li>
-            <li>Address: 123 Street, City, Country</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+  
+  <?php
+  # FOOTER
+  require_once __DIR__ . "/compunents/footer.php"
+  ?>
 
     
         
