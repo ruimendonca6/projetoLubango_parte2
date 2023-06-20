@@ -7,10 +7,7 @@ require_once __DIR__ . "/compunents/navbar.php"
 ?>
 
 
-   
-
-
-<body>
+  
   <header>
   <section class="header">
     <div class="container-fluid"><img src="/recursos/img/cidade-capa.jpg" height="100" width="100"></div>

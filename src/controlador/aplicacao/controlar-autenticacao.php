@@ -4,8 +4,8 @@ session_start();
 ####################
 ### DEPENDÊNCIAS ###
 ####################
-require_once __DIR__ . '/../../infraestrutura/repositorio-utilizador.php';
-require_once __DIR__ . '/../../validacao/aplicacao/validar-login-senha.php';
+require_once __DIR__ . "/../../infraestrutura/repositorio-utilizador.php";
+require_once __DIR__ . "/../../validacao/aplicacao/validar-login-senha.php";
 
 
 ##############

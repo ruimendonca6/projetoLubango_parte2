@@ -3,10 +3,10 @@
 ####################
 ### DEPENDÊNCIAS ###
 ####################
-require_once __DIR__ . '/../../infraestrutura/repositorio-utilizador.php';
-require_once __DIR__ . '/../../validacao/admin/validar-utilizador.php';
-require_once __DIR__ . '/../../validacao/admin/validar-palavra-passe.php';
-require_once __DIR__ . '/../../auxiliadores/auxiliador.php';
+require_once __DIR__ . "/../../infraestrutura/repositorio-utilizador.php";
+require_once __DIR__ . "/../../validacao/admin/validar-utilizador.php";
+require_once __DIR__ . "/../../validacao/admin/validar-palavra-passe.php";
+require_once __DIR__ . "/../../auxiliadores/auxiliador.php";
 
 
 ##############
@@ -63,7 +63,7 @@ if (isset($_GET['utilizador'])) {
         # ENVIA PARÂMETROS COM DADOS DO UTILIZADOR PARA A PÁGINA UTILIZADOR RECUPERAR DADOS PARA MANIPULAR A ALTERAÇÃO
         $params = '?' . http_build_query($utilizador);
 
-        header('location: /../admin/utilizador.php' . $params);
+        header("location: /../admin/utilizador.php". $params);
     }
 
     ## CONTROLA A ROTA PARA A EXCLUSÃO DE UTILIZADORES
@@ -79,7 +79,7 @@ if (isset($_GET['utilizador'])) {
             $_SESSION['erros'] = ['Este utilizador é proprietário do sistema e não pode ser apagado.'];
 
             # REDIRECIONA UTILIZADOR COM DADOS DO FORMULÁRIO ANTERIORMENTE PREENCHIDO
-            header('location: /../admin');
+            header("location: /../admin");
 
             # RETORNA FALSO PARA EVITAR QUE PROGRAMA SIGA
             return false;
@@ -94,7 +94,7 @@ if (isset($_GET['utilizador'])) {
             $_SESSION['sucesso'] = 'Utilizador deletado com sucesso!';
 
             # REDIRECIONA UTILIZADOR COM DADOS DO FORMULÁRIO ANTERIORMENTE PREENCHIDO
-            header('location: /../admin/');
+            header("location: /../admin/");
         }
     }
 }
@@ -121,7 +121,7 @@ function criar($requisicao)
         $params = '?' . http_build_query($requisicao);
 
         # REDIRECIONA UTILIZADOR COM DADOS DO FORMULÁRIO ANTERIORMENTE PREENCHIDO
-        header('location: /../admin/utilizador.php' . $params);
+        header("location: /../admin/utilizador.php" . $params);
 
         return false;
     }
@@ -139,7 +139,7 @@ function criar($requisicao)
         $_SESSION['sucesso'] = 'Utilizador criado com sucesso!';
 
         # REDIRECIONA O UTILIZADO PARA A PÁGINA ADMIN
-        header('location: /../admin/');
+        header("location: /../admin/");
     }
 }
 

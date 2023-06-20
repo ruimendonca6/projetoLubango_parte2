@@ -4,8 +4,8 @@ session_start();
 ####################
 ### DEPENDÊNCIAS ###
 ####################
-require_once __DIR__ . '/../../infraestrutura/basededados/repositorio-utilizador.php';
-require_once __DIR__ . '/../../validacao/aplicacao/validar-login-senha.php';
+require_once __DIR__ . "/../../infraestrutura/repositorio-utilizador.php";
+require_once __DIR__ . "/../../validacao/aplicacao/validar-login-senha.php";
 
 
 ##############
@@ -97,7 +97,7 @@ function fazerLogin($dados)
     setcookie("nome", $dados['nome'], time() + (60 * 60 * 24 * 30), "/");
 
     # REDIRECIONA PARA A PÁGINA APLICAÇÃO
-    $home_url = 'http://' . $_SERVER['HTTP_HOST'] . '/aplicacao/';
+    $home_url = 'http://' . $_SERVER['HTTP_HOST'] . '/aplicacao';
     header('Location: ' . $home_url);
 }
 

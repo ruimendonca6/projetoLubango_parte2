@@ -6,7 +6,7 @@ require_once __DIR__ . '/../src/middleware/middleware-nao-autenticado.php';
 $titulo = ' - Login';
 
 # INICIA CABECALHO
-include_once __DIR__ . '/templates/cabecalho.php';
+include_once __DIR__ . '/../admin/templates/navbar.php';
 ?>
 
 <body class="container vh-100 d-flex align-items-center justify-content-center text-center bg-light">
@@ -43,5 +43,5 @@ include_once __DIR__ . '/templates/cabecalho.php';
       <a href="/"><button class="w-100 btn btn-lg btn-info">Voltar</button></a>
     </main>
     <?php
-    include_once __DIR__ . '/templates/rodape.php';
+    include_once __DIR__ . '/../admin/templates/footer.php';
     ?>

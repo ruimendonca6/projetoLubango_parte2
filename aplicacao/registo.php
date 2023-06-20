@@ -1,10 +1,10 @@
 <?php
 # MIDDLEWARE PARA GARANTIR QUE APENAS UTILIZADORES NÃO AUTENTICADOS VEJAM A PÁGINA DE REGISTO
-require_once __DIR__ . '/../src/middleware/middleware-nao-autenticado.php';
+require_once __DIR__ . "/../src/middleware/middleware-nao-autenticado.php";
 
 # CARREGA O CABECALHO PADRÃO COM O TÍTULO
 $titulo = '- Registro';
-include_once __DIR__ . '/templates/cabecalho.php';
+include_once __DIR__ . "/compunents/header.php";
 ?>
 
 <body class="container vh-100 d-flex align-items-center justify-content-center text-center bg-light">
@@ -29,7 +29,7 @@ include_once __DIR__ . '/templates/cabecalho.php';
         }
         ?>
       </section>
-      <form action="/src/controlador/aplicacao/controlar-registo.php" method="post">
+      <form action="../src/controlador/aplicacao/controlar-registo.php" method="post">
         <h1 class="h3 mb-3 fw-normal">REGISTRO CRUD PHP</h1>
         <div class="form-floating mb-2">
           <input type="text" class="form-control" name="nome" placeholder="nome" maxlength="100" size="100" value="<?= isset($_REQUEST['nome']) ? $_REQUEST['nome'] : null ?>" required>
@@ -52,5 +52,5 @@ include_once __DIR__ . '/templates/cabecalho.php';
       <a href="/index.php"><button class="w-100 btn btn-lg btn-info">Voltar</button></a>
     </main>
     <?php
-    include_once __DIR__ . '/templates/rodape.php';
+    include_once __DIR__ . "/compunents/footer.php";
     ?>
