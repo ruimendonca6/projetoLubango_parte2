@@ -1,6 +1,6 @@
 <?php
 # CARREGA MIDDLEWARE PAGARA GARANTIR QUE APENAS UTILIZADORES AUTENTICADOS ACESSEM ESTE SITIO
-require_once __DIR__ . '/src/middleware/middleware-utilizador.php';
+require_once __DIR__ . '/src/middleware/middleware-nao-autenticado.php';
 
 # ACESSA DE FUNÇÕES AUXILIADORAS. 
 # NOTA: O SIMBOLO ARROBA SERVE PARA NÃO MOSTRAR MENSAGEM DE WARNING, POIS A FUNÇÃO ABAIXO TAMBÉM INICIA SESSÕES
@@ -11,53 +11,76 @@ $utilizador = utilizador();
 
 # CARREGA O CABECALHO PADRÃO COM O TÍTULO
 $titulo = '- Aplicação';
-include_once __DIR__ . '/admin/templates/navbar.php';
+include_once __DIR__ . '/aplicacao/compunents/header.php';
 ?>
 
 <body>
-    <main>
-        <div class="container py-4">
-            <header class="pb-3 mb-4 border-bottom">
-                <a href="/" class="d-flex align-items-center text-dark text-decoration-none"><img src="/recursos/img/logo_angola2.png" alt="Logo" class="mw-100"></a>
-            </header>
-            <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-                <div class="container-fluid py-5">
-                    <h1 class="display-5 fw-bold">Olá <?= $utilizador['nome'] ?? null ?> !</h1>
-                    <p class="col-md-8 fs-4">Agora que está logado no sistema, você tem acesso a informações
-                        exclusivas.</p>
-                    <div class="d-flex justify-content">
-                        <form action="/src/controlador/aplicacao/controlar-autenticacao.php" method="post">
-                            <button class="btn btn-danger btn-lg px-4" type="submit" name="utilizador" value="logout">Logout</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+  <main>
+    <section class="header ">
 
-            <div class="row align-items-md-stretch">
-                <div class="col-md-6">
-                    <div class="h-100 p-5 text-bg-dark rounded-3">
-                        <h2>Perfil</h2>
-                        <p>Este painel é utilizado para destacar que utilizadores REGISTADOS podem alterar o próprio perfil. Aqui
-                            você poderá editar e cancelar a sua assinatura no sistema. <strong class="text-warning">E se estiver vendo
-                                este parágrafo, significa que você precisa completar o seu perfil.</strong></p>
-                        <a href="/aplicacao/perfil.php"><button class="btn btn-outline-light px-5" type="button">Editar</button></a>
-                    </div>
-                </div>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/index.php">
+          <img class="logo w-50 mt-2 ms-2" src="/recursos/img/logo_angola2.png" alt="Logo Angola" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/aplicacao/locais.php">LOCAIS TURÍSTICOS</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/aplicacao/alojamento.php">ALOJAMENTO E RESTAURANTES</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/aplicacao/blog.php">BLOG</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-                <?php
-                # MOSTRA CARD APENAS SE UTILIZDOR FOR ADMINISTRADOR
-                if (autenticado() && $utilizador['administrador']) {
-                    echo '<div class="col-md-6">
-                    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-                        <h2>Painel de Administração</h2>
-                        <p>Este painel é exclusivo para utilizadores REGISTADOS e que tenham o perfil de ADMINISTRADOR. Aqui você poderá criar,
-                            alterar, apagar, promover e despromover outros utilizadores a administradores do sistema.</p>
-                        <a href="/admin/"><button class="btn btn-outline-success" type="button">Administração</button></a>
-                    </div>
-                </div>';
-                }
-                ?>
-            </div>
-            <?php
-            include_once __DIR__ . '/templates/rodape.php';
-            ?>
+
+
+
+      <div class="text-box  text-white text-center">
+        <h1>Visite o Lubango</h1>
+        <p>Venha conhecer a Cidade do Conhecimento e a sua rica cultura.</p>
+        <p>Para ter acesso a mais informações, tal como locais turísticos, alojamentos e restaurantes, crie a sua conta ou faça login.</p>
+        <a href="/aplicacao/login.php" button type="button" class="btn btn-outline-danger"> Login</button></a>
+        <a href="/aplicacao/registo.php" button type="button" class="btn btn-outline-warning">Criar Conta</button></a>
+      </div>
+    </section>
+    <footer class="text-center fixed-bottom">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0 bottom">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/profile.php?id=100010214474906" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/rui_mendonca_6/" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/rui-mendon%C3%A7a-626333252/" target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
+          <!-- Github -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/ruimendonca6" target="_blank" role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center text-white p-3">
+        <p>Instituto Politécnico de Viana do Castelo</p>
+        <p>Projeto Final de Programação Web</p>
+        <p>Professores António José Viana, Marcelo Antunes Fernandes, Wenderson Wanzeller</p>
+        <a class="text-white" href="https://github.com/ruimendonca6" target="_blank">Rui Mendonça</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+  </main>
+  <script src="https://kit.fontawesome.com/a7c0b02132.js" crossorigin="anonymous"></script>
+</body>

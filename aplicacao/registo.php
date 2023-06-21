@@ -5,9 +5,10 @@ require_once __DIR__ . "/../src/middleware/middleware-nao-autenticado.php";
 # CARREGA O CABECALHO PADRÃO COM O TÍTULO
 $titulo = '- Registro';
 include_once __DIR__ . "/compunents/header.php";
+
 ?>
 
-<body class="container vh-100 d-flex align-items-center justify-content-center text-center bg-light">
+<body class="container vh-100 d-flex align-items-center justify-content-center  bg-light">
   <div class="w-75">
     <main>
       <section>
@@ -30,7 +31,7 @@ include_once __DIR__ . "/compunents/header.php";
         ?>
       </section>
       <form action="../src/controlador/aplicacao/controlar-registo.php" method="post">
-        <h1 class="h3 mb-3 fw-normal">REGISTRO CRUD PHP</h1>
+        <h1 class="h3 mb-3 fw-normal">CRIAÇÃO DE CONTA</h1>
         <div class="form-floating mb-2">
           <input type="text" class="form-control" name="nome" placeholder="nome" maxlength="100" size="100" value="<?= isset($_REQUEST['nome']) ? $_REQUEST['nome'] : null ?>" required>
           <label for="nome">Nome:</label>

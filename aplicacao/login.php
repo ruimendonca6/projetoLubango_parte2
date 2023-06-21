@@ -6,10 +6,12 @@ require_once __DIR__ . '/../src/middleware/middleware-nao-autenticado.php';
 $titulo = ' - Login';
 
 # INICIA CABECALHO
-include_once __DIR__ . '/../admin/templates/navbar.php';
+include_once __DIR__ . '/compunents/header.php';
+# INICIA NAVBAR
+include_once __DIR__ . '/compunents/navbar.php'
 ?>
 
-<body class="container vh-100 d-flex align-items-center justify-content-center text-center bg-light">
+<body class="container vh-100 d-flex align-items-top-left justify-content-top-left text-top-left bg-light">
   <div class="w-75">
     <main>
       <section>
@@ -26,7 +28,7 @@ include_once __DIR__ . '/../admin/templates/navbar.php';
         ?>
       </section>
       <form action="/src/controlador/aplicacao/controlar-autenticacao.php" method="post">
-        <h1 class="h3 mb-3 fw-normal">CRUD PHP</h1>
+        <h1 class="h3 mb-3 fw-normal">LOGIN</h1>
         <div class="form-floating mb-2">
           <input type="email" class="form-control" id="Email" placeholder="Email" name="email" maxlength="255" value="<?= isset($_REQUEST['email']) ? $_REQUEST['email'] : null ?>">
           <label for="Email">Endereço de Email</label>
@@ -41,7 +43,8 @@ include_once __DIR__ . '/../admin/templates/navbar.php';
         <button class="w-100 btn btn-lg btn-success mb-2" type="submit" name="utilizador" value="login">Entrar</button>
       </form>
       <a href="/"><button class="w-100 btn btn-lg btn-info">Voltar</button></a>
-    </main>
+   
     <?php
-    include_once __DIR__ . '/../admin/templates/footer.php';
+    include_once __DIR__ . '/compunents/footer.php';
     ?>
+     </main>

@@ -1,6 +1,6 @@
 <?php
 # INICIALIZA O REPOSITÓRIO
-require_once __DIR__ . '/../src/infraestrutura/basededados/repositorio-utilizador.php';
+require_once __DIR__ . '/../src/infraestrutura/repositorio-utilizador.php';
 
 # MIDDLEWARE PARA GARANTIR QUE APENAS ADMNISTRADORES ACESSES ESTA PÁGINA
 require_once __DIR__ . '/../src/middleware/middleware-administrador.php';
