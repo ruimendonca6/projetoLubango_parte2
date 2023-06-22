@@ -10,6 +10,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-pzjwVHA4dIdk0GhiD8OykbUrWvhvuukM/PUg8lJjH7gkiqDYqoo/Js3H/vFKWnol" crossorigin="anonymous">
   <link rel="stylesheet" href="/style/responsive.css">
   <link rel="stylesheet" href="/style/animations.css">
+  <link rel="stylesheet" href="/style/locais.css">
+  <link rel="stylesheet" href="/style/alojamento.css">
+  <link rel="stylesheet" href="/style/blog.css">
+  <link rel="stylesheet" href="/style/visit.css">
+  <link rel="stylesheet" href="/style/navbar.css">
+  <link rel="stylesheet" href="/style/indexLocais.css">
+  <link rel="stylesheet" href="/style/indexAloj.css">
+  <link rel="stylesheet" href="/style/cidade.css">
   <title>Cidade do Lubango</title>
 </head>
 <body>

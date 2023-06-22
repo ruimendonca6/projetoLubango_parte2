@@ -7,11 +7,15 @@ $titulo = ' - Login';
 
 # INICIA CABECALHO
 include_once __DIR__ . '/compunents/header.php';
-# INICIA NAVBAR
-include_once __DIR__ . '/compunents/navbar.php'
+
 ?>
 
 <body class="container vh-100 d-flex align-items-top-left justify-content-top-left text-top-left bg-light">
+<nav class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="/index.php">
+        <img class="logo w-50 mt-2 ms-2 " src="/recursos/img/logo_angola2.png" alt="Logo Angola" />
+    </a>
+</nav>
   <div class="w-75">
     <main>
       <section>

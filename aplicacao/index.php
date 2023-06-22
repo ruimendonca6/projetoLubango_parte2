@@ -33,111 +33,128 @@ include_once __DIR__ . "/compunents/header.php";
 </section>
 
 
-<section class="cidade container" style="width: 80%; margin: auto; text-align: center; padding-top: 100px;">
-  <h1 class="display-4" style="font-size: 36px; font-weight: 600;">Cidade do Lubango</h1>
-  <p class="lead" style="color: #000000; font-size: 20px; font-weight: 400; line-height: 22px; padding: 10px;">Lubango é uma cidade e município de Angola, capital da província da Huíla.</p>
-  <a href="https://www.google.com/maps/place/Lubango,+Angola/@-14.9106332,13.5285005,13z/data=!3m1!4b1!4m6!3m5!1s0x1ba34b79115f7f23:0xcaa20e87e439fb10!8m2!3d-14.9186136!4d13.5321234!16zL20vMDJuODVq?entry=ttu" target="_blank" class="btn btn-primary hero-btn cid-btn">Localização</a>
-  <div class="row mt-5" style="margin-top: 5%; display: flex; justify-content: space-between;">
-    <div class="col-md-4 cidade-col" style="flex-basis: 31%; background: #fae678; border-radius: 10px; margin-bottom: 5%; padding: 20px 12px; box-sizing: border-box; transition: 0.5s;">
-      <h3 class="text-center" style="font-weight: 600; margin: 10px 0;">História</h3>
+<section class="cidade" >
+  <h1 class="h1">Cidade do Lubango</h1>
+  <p class="p">Lubango é uma cidade e município de Angola, capital da província da Huíla.</p>
+  <a href="https://www.google.com/maps/place/Lubango,+Angola/@-14.9106332,13.5285005,13z/data=!3m1!4b1!4m6!3m5!1s0x1ba34b79115f7f23:0xcaa20e87e439fb10!8m2!3d-14.9186136!4d13.5321234!16zL20vMDJuODVq?entry=ttu" target="_blank" type="button" class="btn btn-outline-danger">Localização</button></a>
+  <div class="row">
+    <div class="cidade-col">
+      <h3 class="h3">História</h3>
       <p>A cidade do Lubango, antes de ser erguida, estava num território sob influência do soba do Lubango, cuja ombala se localizava no distrito urbano atualmente conhecido como Munhino. Na chegada dos europeus ao sul de Angola, permaneceu por muito tempo como local de passagem para as incursões coloniais rumo às nascentes da bacia do Cunene, não havendo, até fins do século XIX, nenhuma posição fixa colonial. Desenvolveu-se sobretudo a partir da "colónia de Sá da Bandeira", tomando esse nome entre 1884 e 1975, enquanto o município foi sempre denominado Lubango. Após a independência do país, tanto a cidade como o município tomam definitivamente o nome de Lubango.</p>
     </div>
-    <div class="col-md-4 cidade-col" style="flex-basis: 31%; background: #fae678; border-radius: 10px; margin-bottom: 5%; padding: 20px 12px; box-sizing: border-box; transition: 0.5s;">
-      <h3 class="text-center" style="font-weight: 600; margin: 10px 0;">Etimologia</h3>
+    <div class="cidade-col">
+      <h3 class="h3">Etimologia</h3>
       <p>O nome "Lubango" vem da redução do nome do rei tribal (soba) dos muílas que tinha o nome de Calubango (ou Kaluvango), que foi o líder local que recebeu a primeira expedição europeia nas suas terras. A área sob o seu domínio passou a ser denominada Terras do Calubango e, com o tempo, Terras de Lubango.</p>
     </div>
-    <div class="col-md-4 cidade-col" style="flex-basis: 31%; background: #fae678; border-radius: 10px; margin-bottom: 5%; padding: 20px 12px; box-sizing: border-box; transition: 0.5s;">
-      <h3 class="text-center" style="font-weight: 600; margin: 10px 0;">População</h3>
+    <div class="cidade-col">
+      <h3 class="h3">População</h3>
       <p>Segundo as projeções populacionais de 2018, elaboradas pelo Instituto Nacional de Estatística, conta com uma população de 876 339 habitantes e área territorial de 3 147 km², sendo o mais populoso município da província, da região sul de Angola e o sexto mais populoso do país, o primeiro fora da província de Luanda.</p>
     </div>
   </div>
 </section>
 
-<div class="locais container" style="width: 80%; margin: auto; text-align: center; padding-top: 50px;">
+<div class="locais">
   <h1>Locais turísticos</h1>
   <p>Estes são os locais turísticos mais visitados da cidade.<br>Para ficar a conhecer melhor estes e outros locais turísticos da cidade do Lubango vá até <a href="/aplicacao/locais.php"><u>LOCAIS TURÍSTICOS</u></a>.</p>
   <div class="row">
-    <div class="col-md-4 locais-col animated fadeIn" style="flex-basis: 32%; border-radius: 10px; margin-bottom: 30px; position: relative; overflow: hidden;">
-      <img src="/recursos/img/Serra_leba2.jpg" alt="Imagem" style="width: 100%; display: block;">
-      <div class="layer" style="background: transparent; height: 100%; width: 100%; position: absolute; top: 0; left: 0; transition: 0.5s;">
-        <h3 style="width: 100%; font-weight: 500; color: #fff; font-size: 26px; bottom: 0; left: 50%; transform: translateX(-50%); position: absolute; opacity: 0; transition: 0.5s;">Serra da Leba</h3>
+    <div class="locais-col">
+      <div class="locais-col img">
+        <img src="/recursos/img/Serra_leba2.jpg">
+        <div class="layer">
+          <a href="/aplicacao/locais.php">
+            <h3>Serra da Leba</h3>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="col-md-4 locais-col animated fadeIn" style="flex-basis: 32%; border-radius: 10px; margin-bottom: 30px; position: relative; overflow: hidden;">
-      <img src="/recursos/img/tundavala3.jpg" alt="Imagem" style="width: 100%; display: block;">
-      <div class="layer" style="background: transparent; height: 100%; width: 100%; position: absolute; top: 0; left: 0; transition: 0.5s;">
-        <h3 style="width: 100%; font-weight: 500; color: #fff; font-size: 26px; bottom: 0; left: 50%; transform: translateX(-50%); position: absolute; opacity: 0; transition: 0.5s;">Tundavala</h3>
+    <div class="locais-col">
+      <div class="locais-col img">
+        <img src="/recursos/img/tundavala3.jpg">
+        <div class="layer">
+          <a href="/aplicacao/locais.php">
+            <h3>Tundavala</h3>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="col-md-4 locais-col animated fadeIn" style="flex-basis: 32%; border-radius: 10px; margin-bottom: 30px; position: relative; overflow: hidden;">
-      <img src="/recursos/img/Cristo_Rei2.jpg" alt="Imagem" style="width: 100%; display: block;">
-      <div class="layer" style="background: transparent; height: 100%; width: 100%; position: absolute; top: 0; left: 0; transition: 0.5s;">
-        <h3 style="width: 100%; font-weight: 500; color: #fff; font-size: 26px; bottom: 0; left: 50%; transform: translateX(-50%); position: absolute; opacity: 0; transition: 0.5s;"></h3>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="aloj container" style="width: 80%; margin: auto; text-align: center; padding-top: 50px;">
-  <h1>Alojamento e Restaurantes</h1>
-  <p>Estes são considerados os três melhores alojamentos e restaurantes da cidade.<br>Para ficar a conhecer melhor estes e outros alojamentos ao seu dispor é só consultar <a href="./src/Pages/HomePage/Html/alojamento.html"><u>ALOJAMENTOS E RESTAURANTES.</u></a></p>
-  <div class="row">
-    <div class="col-md-4 aloj-col" style="flex-basis: 32%; border-radius: 10px; margin-bottom: 30px; position: relative; overflow: hidden;">
-      <img src="/recursos/img/casper-lodge.jpg" alt="Imagem" style="width: 100%; display: block;">
-      <div class="layer" style="background: transparent; height: 100%; width: 100%; position: absolute; top: 0; left: 0; transition: 0.5s;">
-        <h3 style="width: 100%; font-weight: 500; color: #fff; font-size: 26px; bottom: 0; left: 50%; transform: translateX(-50%); position: absolute; opacity: 0; transition: 0.5s;">Casper Lodge</h3>
-      </div>
-    </div>
-    <div class="col-md-4 aloj-col" style="flex-basis: 32%; border-radius: 10px; margin-bottom: 30px; position: relative; overflow: hidden;">
-      <img src="/recursos/img/pululukwa2.jpg" alt="Imagem" style="width: 100%; display: block;">
-      <div class="layer" style="background: transparent; height: 100%; width: 100%; position: absolute; top: 0; left: 0; transition: 0.5s;">
-        <h3 style="width: 100%; font-weight: 500; color: #fff; font-size: 26px; bottom: 0; left: 50%; transform: translateX(-50%); position: absolute; opacity: 0; transition: 0.5s;">Pululukwa</h3>
-      </div>
-    </div>
-    <div class="col-md-4 aloj-col" style="flex-basis: 32%; border-radius: 10px; margin-bottom: 30px; position: relative; overflow: hidden;">
-      <img src="/recursos/img/hotel-serra.jpg" alt="Imagem" style="width: 100%; display: block;">
-      <div class="layer" style="background: transparent; height: 100%; width: 100%; position: absolute; top: 0; left: 0; transition: 0.5s;">
-        <h3 style="width: 100%; font-weight: 500; color: #fff; font-size: 26px; bottom: 0; left: 50%; transform: translateX(-50%); position: absolute; opacity: 0; transition: 0.5s;">Hotel Serra da Chela</h3>
+    <div class="locais-col">
+      <div class="locais-col img">
+        <img src="/recursos/img/Cristo_Rei2.jpg">
+        <div class="layer">
+          <a href="/aplicacao/locais.php">
+            <h3>Serra da Leba</h3>
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<section class="eventos">
-  <div class="container">
-    <h1>Eventos</h1>
+
+  <section class="aloj">
+    <h1>Alojamentos e Restaurantes</h1>
+    <p>Estes são considerados os três melhores alojamentos e restaurantes da cidade.<br>Para ficar a conhecer melhor estes e outros alojamentos ao seu dispor é só consultar <a href="/aplicacao/alojamento.php"><u>ALOJAMENTOS E RESTAURANTES.</u></a></p>
     <div class="row">
-      <div class="col-md-4">
-        <div class="eventos-col">
-          <img src="evento1.jpg" alt="Evento 1">
-          <h3>Evento 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum purus vitae neque efficitur, ut
-            faucibus nunc pharetra.</p>
+      <div class="aloj-col">
+        <div class="aloj-col img">
+          <img src="/recursos/img/casper-lodge.jpg">
+          <div class="layer">
+            <a href="/aplicacao/alojamento.php"><h3>Casper<br>Lodge</h3>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="eventos-col">
-          <img src="evento2.jpg" alt="Evento 2">
-          <h3>Evento 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum purus vitae neque efficitur, ut
-            faucibus nunc pharetra.</p>
+      <div class="aloj-col">
+        <div class="aloj-col img">
+          <img src="/recursos/img/pululukwa2.jpg">
+          <div class="layer">
+            <a href="/aplicacao/alojamento.php"><h3>Pululukwa<br>Lodge</h3>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="eventos-col">
-          <img src="evento3.jpg" alt="Evento 3">
-          <h3>Evento 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum purus vitae neque efficitur, ut
-            faucibus nunc pharetra.</p>
+      <div class="aloj-col">
+        <div class="aloj-col img">
+          <img src="/recursos/img/hotel-serra.jpg">
+          <div class="layer">
+            <a href="/aplicacao/alojamento.php">
+              <h3>Hotel<br>Serra da Chela</h3>
+            </a>
+          </div>
         </div>
+      </div>
+      </div>
+    </section>
+
+
+  <section class="eventos container" style="width: 80%; margin: auto; text-align: center; padding-top: 100px;">
+    <h1>Eventos</h1>
+    <p>O mês de Agosto é considerado o mês da cidade, ou seja, grande parte dos eventos culturais e desportivos são realizados nesse mês.</p>
+
+    <div class="row">
+      <div class="col-md-4" style="flex-basis: 31%; border-radius: 10px; margin-bottom: 5%; text-align: left;">
+        <img src="/recursos/img/corridas-1.jpg" alt="Automobilismo" style="width: 100%; border-radius: 10px;" class="img-fluid rounded">
+        <h3 style="margin-top: 16px; margin-bottom: 15px; text-align: left;">Automobilismo</h3>
+        <p style="padding: 0;">Prova Nacional de Automobilismo e Motociclismo</p>
+      </div>
+      <div class="col-md-4" style="flex-basis: 31%; border-radius: 10px; margin-bottom: 5%; text-align: left;">
+        <img src="/recursos/img/nossa-senhora-do-monte-1.jpg" alt="Peregrinação à Capela da Nossa Senhora do Monte" style="width: 100%; border-radius: 10px;" class="img-fluid rounded">
+        <h3 style="margin-top: 16px; margin-bottom: 15px; text-align: left;">Peregrinação à Capela da Nossa Senhora do Monte</h3>
+        <p style="padding: 0;">Peregrinação Religiosa que começa no centro da cidade e termina no topo da montanha onde se encontra a Capela da Nossa Senhora do Monte.</p>
+      </div>
+      <div class="col-md-4" style="flex-basis: 31%; border-radius: 10px; margin-bottom: 5%; text-align: left;">
+        <img src="/recursos/img/feira-gado.jpg" alt="Feira do Gado" style="width: 100%; border-radius: 10px;" class="img-fluid rounded">
+        <h3 style="margin-top: 16px; margin-bottom: 15px; text-align: left;">Feira do Gado</h3>
+        <p style="padding: 0;">Feira do Gado, onde os vários fazendeiros expõem as suas posses e as leiloam.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <section class="visit">
+    <h1>Marque aqui a sua estadia</h1>
+    <a href="https://www.google.com/maps/place/Cristo+Rei+Statuate+%2FLubango/@-14.9400375,13.5118906,15z/data=!4m2!3m1!1s0x0:0xb7389c5e127c5216?sa=X&ved=2ahUKEwib95TP9tT_AhXmVKQEHb5BCxQQ_BJ6BAhUEAg" target="_blank" type="button" class="btn btn-warning">Contacte-nos</a>
+  </section>
 
-<?php
-# FOOTER
-require_once __DIR__ . "/compunents/footer.php"
-?>
+  <?php
+  # FOOTER
+  require_once __DIR__ . "/compunents/footer.php";
+  ?>

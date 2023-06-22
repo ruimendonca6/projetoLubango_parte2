@@ -6,7 +6,7 @@ require_once __DIR__ . '/../src/middleware/middleware-utilizador.php';
 $titulo = ' - Perfil';
 include_once __DIR__ . '/compunents/header.php';
 # CARREGA A NAVBAR
-include_once __DIR__ . '/compunents/navbar.php';
+require_once __DIR__ . '/compunents/navbar.php';
 
 # ACESSA DE FUNÇÕES AUXILIADORAS. 
 # NOTA: O SIMBOLO ARROBA SERVE PARA NÃO MOSTRAR MENSAGEM DE WARNING, POIS A FUNÇÃO ABAIXO TAMBÉM INICIA SESSÕES

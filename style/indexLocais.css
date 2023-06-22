@@ -1,3 +1,25 @@
+.locais{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.locais a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+}
+.locais-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.locais-col img{
+    width: 100%;
+    display: block;
+}
 .layer{
     background: transparent;
     height: 100%;

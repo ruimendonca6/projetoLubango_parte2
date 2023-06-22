@@ -23,20 +23,7 @@ include_once __DIR__ . '/aplicacao/compunents/header.php';
           <img class="logo w-50 mt-2 ms-2" src="/recursos/img/logo_angola2.png" alt="Logo Angola" />
         </a>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">HOME</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/aplicacao/locais.php">LOCAIS TURÍSTICOS</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/aplicacao/alojamento.php">ALOJAMENTO E RESTAURANTES</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/aplicacao/blog.php">BLOG</a>
-            </li>
-          </ul>
+          
         </div>
       </nav>
 

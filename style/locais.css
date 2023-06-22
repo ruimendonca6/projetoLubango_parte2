@@ -1,0 +1,31 @@
+.sub-header2{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/recursos/img/serra_leba3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+}
+.sub-header2 h1{
+    margin-top: 100px;
+}
+.aloj-res{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.res-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.aloj-res img{
+    width: 100%;
+}
+.aloj-res h1{
+    padding-top: 0;
+}
+.aloj-res p{
+    padding: 15px 0 25px;
+}
