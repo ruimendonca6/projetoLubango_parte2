@@ -1,3 +1,9 @@
+<?php
+require_once __DIR__ . "/../../src/controlador/admin/controlar-utilizador.php"
+
+?>
+
+
 <nav class="nav">
     <a class="navbar-brand" href="/index.php">
         <img class="logo w-50 mt-2 ms-2 " src="/recursos/img/logo_angola2.png" alt="Logo Angola" />
@@ -21,6 +27,16 @@
                     <button class="btn btn-outline-danger" type="submit" name="utilizador" value="logout">Logout</button>
             </form>
             </li>
+            <li class="nav-item active">
+            <a href="/admin/Admin.php">
+            <button <?php #if ($isAdmin ? true : false) { echo 'style="display: none;"'; } ?>  class="btn btn-outline-warning" type="button">Painel de Controlo</button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/aplicacao/perfil.php">
+              <button class="btn btn-outline-success" type="button">Edit Profile</button>
+            </a>
+          </li>
         </ul>
     </div>
 </nav>

@@ -1,10 +1,10 @@
 <?php
 # CARREGA MIDDLEWARE PAGARA GARANTIR QUE APENAS UTILIZADORES AUTENTICADOS ACESSEM ESTE SITIO
-require_once('./src/middleware/middleware-utilizador.php');
+require_once __DIR__ . '/../src/middleware/middleware-utilizador.php';
 
 # CARREGA O CABECALHO PADRÃO COM O TÍTULO
 $titulo = ' - Altarar Palavra Passe';
-include_once __DIR__ . '/templates/cabecalho.php';
+include_once __DIR__ . '/compunents/header.php';
 
 # ACESSA DE FUNÇÕES AUXILIADORAS. 
 # NOTA: O SIMBOLO ARROBA SERVE PARA NÃO MOSTRAR MENSAGEM DE WARNING, POIS A FUNÇÃO ABAIXO TAMBÉM INICIA SESSÕES
@@ -18,7 +18,7 @@ $utilizador = utilizador();
   <div class="pt-1 ">
     <div class="p-5 mb-2 bg-info text-white">
       <h1>Registo de Utilizadores</h1>
-      <p>CRUD | Front-end Bootstrap | Back-end PHP</p>
+      <p>Mudança da Palavra Passe</p>
     </div>
     <main class="bg-light">
       <section class="py-4">
@@ -64,5 +64,5 @@ $utilizador = utilizador();
       </section>
     </main>
     <?php
-    include_once __DIR__ . '/templates/rodape.php';
+    include_once __DIR__ . '/compunents/footer.php';
     ?>

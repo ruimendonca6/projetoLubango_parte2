@@ -126,25 +126,31 @@ include_once __DIR__ . "/compunents/header.php";
     </section>
 
 
-  <section class="eventos container" style="width: 80%; margin: auto; text-align: center; padding-top: 100px;">
+  <section class="eventos">
     <h1>Eventos</h1>
     <p>O mês de Agosto é considerado o mês da cidade, ou seja, grande parte dos eventos culturais e desportivos são realizados nesse mês.</p>
 
     <div class="row">
-      <div class="col-md-4" style="flex-basis: 31%; border-radius: 10px; margin-bottom: 5%; text-align: left;">
+      <div class="eventos-col">
+        <div class="eventos-col img">
         <img src="/recursos/img/corridas-1.jpg" alt="Automobilismo" style="width: 100%; border-radius: 10px;" class="img-fluid rounded">
-        <h3 style="margin-top: 16px; margin-bottom: 15px; text-align: left;">Automobilismo</h3>
-        <p style="padding: 0;">Prova Nacional de Automobilismo e Motociclismo</p>
+        <h3 class="eventos-col h3">Automobilismo</h3>
+        <p class="enventos-col p">Prova Nacional de Automobilismo e Motociclismo</p>
       </div>
-      <div class="col-md-4" style="flex-basis: 31%; border-radius: 10px; margin-bottom: 5%; text-align: left;">
-        <img src="/recursos/img/nossa-senhora-do-monte-1.jpg" alt="Peregrinação à Capela da Nossa Senhora do Monte" style="width: 100%; border-radius: 10px;" class="img-fluid rounded">
-        <h3 style="margin-top: 16px; margin-bottom: 15px; text-align: left;">Peregrinação à Capela da Nossa Senhora do Monte</h3>
-        <p style="padding: 0;">Peregrinação Religiosa que começa no centro da cidade e termina no topo da montanha onde se encontra a Capela da Nossa Senhora do Monte.</p>
       </div>
-      <div class="col-md-4" style="flex-basis: 31%; border-radius: 10px; margin-bottom: 5%; text-align: left;">
-        <img src="/recursos/img/feira-gado.jpg" alt="Feira do Gado" style="width: 100%; border-radius: 10px;" class="img-fluid rounded">
-        <h3 style="margin-top: 16px; margin-bottom: 15px; text-align: left;">Feira do Gado</h3>
-        <p style="padding: 0;">Feira do Gado, onde os vários fazendeiros expõem as suas posses e as leiloam.</p>
+      <div class="eventos-col">
+        <div class="eventos-col img">
+        <img src="/recursos/img/nossa-senhora-do-monte-1.jpg" style="width: 100%; border-radius: 10px;" class="img-fluid rounded">
+        <h3 class="eventos-col h3">Peregrinação à Capela da Nossa Senhora do Monte</h3>
+        <p class="enventos-col p">Peregrinação Religiosa que começa no centro da cidade e termina no topo da montanha onde se encontra a Capela da Nossa Senhora do Monte.</p>
+      </div>
+      </div>
+      <div class="eventos-col">
+        <div class="eventos-col img">
+        <img src="/recursos/img/feira-gado.jpg" style="width: 100%; border-radius: 10px;" class="img-fluid rounded">
+        <h3 class="eventos-col h3">Feira do Gado</h3>
+        <p class="enventos-col p">Feira do Gado, onde os vários fazendeiros expõem as suas posses e as leiloam.</p>
+      </div>
       </div>
     </div>
   </section>

@@ -12,12 +12,12 @@ function validarLogin($reqisicao)
 
     # VALIDANDO O CAMPO EMAIL
     if (!filter_var($reqisicao['email'], FILTER_VALIDATE_EMAIL)) {
-        $erros['email'] = 'O campo Email não pode estar vazio e deve ter o formato de email, a exemplo de: nome@dominio.pt.';
+        $erros['email'] = 'O campo Email não pode estar vazio e deve ter o formato de email, como por exemplo: nome@dominio.pt.';
     }
 
     # VALIDANDO O CAMPO PALAVRA PASSE
     if (empty($reqisicao['palavra_passe']) || strlen($reqisicao['palavra_passe']) < 6) {
-        $erros['palavra_passe'] = 'O campo Palavra Passe não pode estar vazio e deve ter no mínio 6 caracteres.';
+        $erros['palavra_passe'] = 'O campo Palavra Passe não pode estar vazio e deve ter no mínimo 6 caracteres.';
     }
 
     # RETORNA ERROS
@@ -41,11 +41,11 @@ function validarPalavraPasse($reqisicao)
 
         # VALIDANDO O CAMPO EMAIL
         if (!$utilizador) {
-            $erros['email'] = 'Verifique seu email.';
+            $erros['email'] = 'Verifique o seu email.';
         }
 
         if (!password_verify($reqisicao['palavra_passe'], $utilizador['palavra_passe'])) {
-            $erros['palavra_passe'] = 'Verifique sua palavra passe.';
+            $erros['palavra_passe'] = 'Verifique a sua palavra passe.';
         }
 
         # RETORNA ERROS

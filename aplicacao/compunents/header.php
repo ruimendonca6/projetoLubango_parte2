@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="/style/indexLocais.css">
   <link rel="stylesheet" href="/style/indexAloj.css">
   <link rel="stylesheet" href="/style/cidade.css">
+  <link rel="stylesheet" href="/style/eventos.css">
   <title>Cidade do Lubango</title>
 </head>
 <body>

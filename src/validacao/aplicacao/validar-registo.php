@@ -12,7 +12,7 @@ function validarRegisto($requisicao)
 
     # VALIDANDO O CAMPO NOME
     if (empty($requisicao['nome']) || strlen($requisicao['nome']) < 3 || strlen($requisicao['nome']) > 255) {
-        $erros['nome'] = 'O campo Nome não pode estar vazio e deve ter entre 3 e 255 caracteres.';
+        $erros['nome'] = 'O campo Nome não pode estar vazio e deve ter entre 3 e 255 caractéres.';
     }
 
     # VALIDANDO O CAMPO EMAIL
@@ -22,12 +22,12 @@ function validarRegisto($requisicao)
 
     # VALIDANDO O CAMPO EMAIL
     if (lerUtilizadorPorEmail($requisicao['email'])) {
-        $erros['email'] = 'Email já registado em nosso sistema. Se não lembrar sua palavra passe, entre em contato conosco.';
+        $erros['email'] = 'Email já registado no nosso sistema. Se não se lembrar da sua palavra passe, entre em contato connosco.';
         return ['invalido' => $erros];
     }
     # VALIDANDO O CAMPO PALAVRA PASSE
     if (empty($requisicao['palavra_passe']) && strlen($requisicao['palavra_passe']) < 6) {
-        $erros['palavra_passe'] = 'O campo Palavra Passe não pode estar vazio e deve ter no mínio 6 caracteres.';
+        $erros['palavra_passe'] = 'O campo Palavra Passe não pode estar vazio e deve ter no mínimo 6 caractéres.';
     }
 
     # VALIDANDO O CAMPOCONFIRMAR PALAVRA PASSE

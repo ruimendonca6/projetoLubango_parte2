@@ -85,3 +85,107 @@ $sucesso = $PDOStatement->execute([
 ]);
 
 echo 'Utilizador padrão criado!';
+
+
+
+
+
+#CRIAÇÃO DA TABELA LOCAIS TURISTICOS
+$pdo->exec('DROP TABLE IF EXISTS Locais_Turisticos;');
+
+echo 'Tabela Locais_Turisticos apagada!' . PHP_EOL;
+
+#TABELA LOCAIS TURÍSTICOS
+$pdo->exec(
+    'CREATE TABLE Locais_Turisticos(
+        id INTEGER PRIMARY KEY,
+        titulo CHAR NOT NULL,
+        img CHAR NULL,
+        texto TEXT NOT NULL,
+        links TEXT);'
+);
+
+echo 'Tabelo Locais_Turísticos criada!' . PHP_EOL;
+
+#INSERE UTILIZADOR
+$sqlCreate = "INSERT INTO
+    Locais_Turisticos (
+        titulo,
+        img,
+        texto,
+        links,)
+    VALUES (
+       :titulo,
+       :img,
+       :texto,
+       :links
+    )";
+
+
+
+
+#CRIAÇÃO DA TABELA ALOJAMENTOS E RESTAURANTES
+
+$pdo->exec('DROP TABLE IF EXISTS Alojamentos_Restaurantes;');
+
+echo 'Tabela Alojamentos_Restaurantes apagada!' . PHP_EOL;
+
+#TABELA ALOJAMENTOS E RESTAURANTES
+$pdo->exec(
+    'CREATE TABLE Alojamentos_Restaurantes(
+        id INTEGER PRIMARY KEY,
+        titulo CHAR NOT NULL,
+        img CHAR NULL,
+        texto TEXT NOT NULL,
+        links TEXT);'
+);
+
+echo 'Tabelo Alojamentos_Restaurantes criada!' . PHP_EOL;
+
+#INSERE UTILIZADOR
+$sqlCreate = "INSERT INTO
+    Alojamentos_Restaurantes (
+        titulo,
+        img,
+        texto,
+        links,)
+    VALUES (
+       :titulo,
+       :img,
+       :texto,
+       :links
+    )";
+
+
+
+#CRIAÇÃO DA TABELA BLOG
+
+$pdo->exec('DROP TABLE IF EXISTS Blog;');
+
+echo 'Tabela Blog apagada!' . PHP_EOL;
+
+#TABELA ALOJAMENTOS E RESTAURANTES
+$pdo->exec(
+    'CREATE TABLE Blog(
+        id INTEGER PRIMARY KEY,
+        titulo CHAR NOT NULL,
+        img CHAR NULL,
+        texto TEXT NOT NULL,
+        links TEXT);'
+);
+
+echo 'Tabelo Blog criada!' . PHP_EOL;
+
+#INSERE UTILIZADOR
+$sqlCreate = "INSERT INTO
+    Blog (
+        titulo,
+        img,
+        texto,
+        links,)
+    VALUES (
+       :titulo,
+       :img,
+       :texto,
+       :links
+    )";

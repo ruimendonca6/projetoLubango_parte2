@@ -32,7 +32,7 @@ function utilizadorValido($requisicao)
 
     # VALIDANDO O CAMPO EMAIL
     if (!filter_var($requisicao['email'], FILTER_VALIDATE_EMAIL)) {
-        $erros['email'] = 'O campo Email não pode estar vazio e deve ter o formato de email, a exemplo de: nome@dominio.pt.';
+        $erros['email'] = 'O campo Email não pode estar vazio e deve ter o formato de email,como por exemplo: nome@dominio.pt.';
     }
 
     # VALIDANDO FOTO DE PERFIL
@@ -52,7 +52,7 @@ function utilizadorValido($requisicao)
 
         # VERIFICA SE O FICHEIRO É UMA IMAGEM
         if (!preg_match("/^image\/(pjpeg|jpeg|png|gif)$/", ($_FILES['foto']['type']))) {
-            $erros['foto_formato']  = 'Você poderá enviar apenas arquivos "*.jpg;*.jpeg;*.gif;*.png"';
+            $erros['foto_formato']  = 'Você deve enviar apenas arquivos "*.jpg;*.jpeg;*.gif;*.png"';
         }
 
         # VERIFICA SE A LARGURA DA IMAGEM É MAIOR QUE A DEFINIDA
@@ -73,7 +73,7 @@ function utilizadorValido($requisicao)
 
     # VALIDANDO O CAMPO PALAVRA PASSE
     if (!empty($requisicao['palavra_passe']) && strlen($requisicao['palavra_passe']) < 6) {
-        $erros['palavra_passe'] = 'O campo Palavra Passe não pode estar vazio e deve ter no mínio 6 caracteres.';
+        $erros['palavra_passe'] = 'O campo Palavra Passe não pode estar vazio e deve ter no mínimo 6 caracteres.';
     }
 
     # VALIDANDO O CAMPOCONFIRMAR PALAVRA PASSE
