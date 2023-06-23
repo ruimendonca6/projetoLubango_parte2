@@ -12,7 +12,7 @@ require_once __DIR__ . "/../../src/controlador/admin/controlar-admin.php";
     <div class="nav-links">
         <ul class="nav-links ul li">
             <li class="nav-item active text-white">
-                <a class="nav-links2 text-white" href="/aplicacao/index.php">HOME</a>
+                <a class="nav-links2 text-white" href="/aplicacao/index.php">HOMEe</a>
             </li>
             <li class="nav-item active text-white">
                 <a class="nav-link2 text-white" href="/aplicacao/locais.php">LOCAIS TURÍSTICOS</a>

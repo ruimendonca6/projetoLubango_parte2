@@ -157,7 +157,7 @@ include_once __DIR__ . "/compunents/header.php";
 
   <section class="visit">
     <h1>Marque aqui a sua estadia</h1>
-    <a href="https://www.google.com/maps/place/Cristo+Rei+Statuate+%2FLubango/@-14.9400375,13.5118906,15z/data=!4m2!3m1!1s0x0:0xb7389c5e127c5216?sa=X&ved=2ahUKEwib95TP9tT_AhXmVKQEHb5BCxQQ_BJ6BAhUEAg" target="_blank" type="button" class="btn btn-warning">Contacte-nos</a>
+    <a href="https://www.booking.com/index.pt-pt.html?label=gen173nr-1BCAEoggI46AdIM1gEaLsBiAEBmAEfuAEXyAEM2AEB6AEBiAIBqAIDuAKDgtakBsACAdICJGYyZDk0OTVlLTc2YmUtNDY3NC04NWE0LTVlOGJlYzdmZTE1N9gCBeACAQ&sid=1a3aa577a0340c30356b878c52f5b607&keep_landing=1&sb_price_type=total&" target="_blank" type="button" class="btn btn-warning">Contacte-nos</a>
   </section>
 
   <?php

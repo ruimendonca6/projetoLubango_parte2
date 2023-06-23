@@ -31,7 +31,7 @@ include_once __DIR__ . '/aplicacao/compunents/header.php';
 
 
       <div class="text-box  text-white text-center">
-        <h1 class="d-flex h justify-content-center text-white text-center p-4">Visite o Lubango</h1>
+        <h1 class="d-flex h justify-content-center text-white text-center p-4">Visitee o Lubango</h1>
         <p class="d-flex h justify-content-center text-white text-center p-4">Venha conhecer a Cidade do Conhecimento e a sua rica cultura.</p>
         <p class="d-flex h justify-content-center text-white text-center p-4">Para ter acesso a mais informações, tal como locais turísticos, alojamentos e restaurantes, crie a sua conta ou faça login.</p>
         <a href="/aplicacao/login.php" button type="button" class="btn btn-outline-danger"> LOGIN</button></a>

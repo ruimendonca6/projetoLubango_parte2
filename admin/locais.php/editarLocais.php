@@ -58,7 +58,7 @@ require_once __DIR__ . '/../templates/header.php';
         <tbody>
           <?php
           # VARRE TODOS OS UTILIZADORES PARA CONSTRUÇÃO DA TABELA
-          foreach ($ as $infolocais) {
+          foreach ($sucesso as $infolocais) {
           ?>
             <tr>
               <th scope="row"><?= $infolocais['nome'] ?></th>
