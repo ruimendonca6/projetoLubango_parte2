@@ -1,4 +1,3 @@
-
 <?php
 
 require_once __DIR__ . '/../../infraestrutura/user.php';
@@ -17,14 +16,14 @@ if (isset($_POST['info'])) {
     if ($_POST['info'] == 'criar') {
 
         # CRIA UM info
-        InserirInfo($_POST);
+        InserirAloj($_POST);
         //salvarInformacao($_POST,$_FILES['foto']);
     }
         ## CONTROLA A ATUALIZAÇÃO DE DADOS DE PERFIL DOS UTILIZADORES (APLICAÇÃO)
         if ($_POST['utilizador'] == 'perfil') {
 
             # ATUALIZA UM UTILIZADOR
-            AtualizarLocais($_POST);
+            AtualizarAloj($_POST);
         }
     
 }
@@ -46,17 +45,17 @@ if (isset($_GET['info'])) {
         # ENVIA PARÂMETROS COM DADOS DO UTILIZADOR PARA A PÁGINA UTILIZADOR RECUPERAR DADOS PARA MANIPULAR A ALTERAÇÃO
         $params = '?' . http_build_query($info);
 
-        header('location: /../../../admin/locais.php/editarLocais.php' . $params);
+        header('location: /../../../admin/aloj.php/editarAloj.php' . $params);
         
     }
     ## CONTROLA A ROTA PARA A EXCLUSÃO DE UTILIZADORES
     if ($_GET['info'] == 'deletar') {
 
         # RECUPERA DADOS DO UTILIZADOR
-        $info = lerinfo($_GET['id']);
+        $info = leraloj($_GET['id']);
 
         # DELETA info
-        $sucesso = DeleteInfo($info);
+        $sucesso = DeleteAloj($info);
 
         # REDIRECIONA info PARA PÁGINA ADMIN COM MENSAGEM DE SUCCESO
         if ($sucesso) {
@@ -64,7 +63,7 @@ if (isset($_GET['info'])) {
             $_SESSION['sucesso'] = 'info deletado com sucesso!';
 
             # REDIRECIONA info COM DADOS DO FORMULÁRIO ANTERIORMENTE PREENCHIDO
-            header('location: /../../../admin/locais.php/AllLocais.php');
+            header('location: /../../../admin/aloj.php/AllAloj.php');
         }
     }
 }
@@ -81,7 +80,7 @@ if (isset($_GET['info'])) {
 /**
  * FUNÇÃO RESPONSÁVEL POR Inserir uma nova informacao
  */
-function InserirInfo($requisicao)
+function InserirAloj($requisicao)
 {
     # VALIDA DADOS DO UTILIZADOR. FICHEIRO VALIDAÇÃO->APLICAÇAO->ADMIN->VALIDAR-UTILIZADOR.PHP
     $dados = infoValida($requisicao);
@@ -96,7 +95,7 @@ function InserirInfo($requisicao)
         $params = '?' . http_build_query($requisicao);
 
         # REDIRECIONA UTILIZADOR COM DADOS DO FORMULÁRIO ANTERIORMENTE PREENCHIDO
-        header('location: /../../../admin/locais.php/AllLocais.php' . $params);
+        header('location: /../../../admin/aloj.php/AllAloj.php' . $params);
 
         return false;
     }
@@ -105,23 +104,23 @@ function InserirInfo($requisicao)
     $dados = guardaFotoinfo($dados);
 
     # GUARDA UTILIZADOR NA BASE DE DADOS (REPOSITÓRIO PDO)
-    $sucesso = registarinfo($dados);
+    $sucesso = registaraloj($dados);
 
     # REDIRECIONA UTILIZADOR PARA PÁGINA DE REGISTO COM MENSAGEM DE SUCCESO
     if ($sucesso) {
 
         # DEFINE MENSAGEM DE SUCESSO
-        $_SESSION['sucesso'] = 'Info criada com sucesso!';
+        $_SESSION['sucesso'] = 'Alojamento/Restaurante criado com sucesso!';
 
         # REDIRECIONA O UTILIZADO PARA A PÁGINA ADMIN
-        header('location: /../../../admin/locais.php/inserirLocais.php');
+        header('location: /../../../admin/aloj.php/inserirAloj.php');
     }
 }
 
 /**
  * FUNÇÃO RESPONSÁVEL POR ATUALIZAR UMA INFO
  */
-function AtualizarLocais($requisicao)
+function AtualizarAlojamento($requisicao)
 {
     # VALIDA DADOS DA FESTA
     $dados = infoValida($requisicao);
@@ -139,13 +138,13 @@ function AtualizarLocais($requisicao)
         $params = '?' . http_build_query($requisicao);
 
         # REDIRECIONA O USUÁRIO COM DADOS DO FORMULÁRIO ANTERIORMENTE PREENCHIDO
-        header('location: /../../../admin/locais.php/editarLocais.php' . $params);
+        header('location: /../../../admin/aloj.php/editarAloj.php' . $params);
 
         return false;
     }
 
     # RECUPERA DADOS DA FESTA
-    $sucesso = lerinfo($dados['id']);
+    $sucesso = leraloj($dados['id']);
 
     # GUARDA FOTO EM DIRETÓRIO LOCAL E APAGA A FOTO ANTIGA ORIUNDA DA REQUISIÇÃO (FUNÇÃO LOCAL)
     if (!empty($_FILES['foto']['name'])) {
@@ -153,7 +152,7 @@ function AtualizarLocais($requisicao)
     }
 
     # ATUALIZA FESTA (REPOSITÓRIO PDO)
-    $sucesso = AtualizarInfo($dados);
+    $sucesso = AtualizarAloj($dados);
 
     # REDIRECIONA O USUÁRIO PARA A PÁGINA DE ALTERAÇÃO COM MENSAGEM DE SUCESSO
     if ($sucesso) {
@@ -168,20 +167,20 @@ function AtualizarLocais($requisicao)
         $params = '?' . http_build_query($dados);
 
         # REDIRECIONA O USUÁRIO COM DADOS DO FORMULÁRIO ANTERIORMENTE PREENCHIDO
-        header('location: /../../../admin/locais.php/editarLocais.php' . $params);
+        header('location: /../../../admin/aloj.php/editarAloj.php' . $params);
     }
 }
 
 /**
  * FUNÇÃO RESPONSÁVEL POR DELETAR a
  */
-function DeleteInfo($Info)
+function DeleteAlojamento($Info)
 {
     # DEFINE O CAMINHO DO FICHEIRO
     $caminhoFicheiro = __DIR__ . '';
     
     # VALIDA DADOS DO UTILIZADOR
-    $retorno = deleteInfos($Info['id']);
+    $retorno = deleteAloj($Info['id']);
 
     # COMANDO PARA APAGAR O FICHEIRO
     $caminhoCompleto = $caminhoFicheiro . $Info['img'];
@@ -214,7 +213,7 @@ function guardaFotoinfo($dados, $fotoAntiga = null)
     $novoNome = uniqid('img_') . '.' . $extensao;
 
     # DEFINE O CAMINHO DO FICHEIRO
-    $caminhoFicheiro = __DIR__ . '/../../../recursos/uploadLocais/';
+    $caminhoFicheiro = __DIR__ . '/../../../recursos/uploadAloj/';
 
     # DEFINE CAMINHO COMPLETO DO FICHEIRO
     $ficheiro = $caminhoFicheiro . $novoNome;

@@ -23,7 +23,7 @@ require_once __DIR__ . '/../aplicacao/compunents/header.php';
 
     <?php
 
-    require_once __DIR__ . '/../aplicacao/compunents/navbar.php';
+    require_once __DIR__ . '/../admin/templates/navbarAdmin.php';
 
     ?>
 
@@ -31,45 +31,55 @@ require_once __DIR__ . '/../aplicacao/compunents/header.php';
         <h1 class="text-center">O Administrador <?= $utilizador['nome'] ?? null ?> acedeu ao painel <br> de controlo.</h1>
     </div>
 
-    <div class="container mb-4 d-flex vw-100">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="card" style="width: 18rem;">
-                <img src="/recursos/img/utilizadores.jpg" class="card-img-top">
+    <div class="container mb-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="/recursos/img/adult-busy-cellphone-1083622-1200x675.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Utilizadores</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Aqui irá poder gerir os vários Utilizadores que se irão registra na plataforma.</p>
                     <a href="/admin/editarUtilizador.php" class="btn btn-primary">Atualizar/Apagar</a>
                     <a href="/admin/editarUtilizador.php" class="btn btn-primary">Inserir</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+        </div>
+        <div class="col">
+            <div class="card h-100">
                 <img src="/recursos/img/cristo-rei3.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Locais Turísticos</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="/admin/editarLocais.php" class="btn btn-primary">Atualizar/Apagar</a>
-                    <a href="/admin/editarLocais.php" class="btn btn-primary">Inserir</a>
+                    <p class="card-text">Aqui irá gerir todos os Locais Turísticos da cidade do Lubango.</p>
+                    <a href="/admin/locais.php/AllLocais.php" class="btn btn-primary">Atualizar/Apagar</a>
+                    <a href="/admin/locais.php/inserirLocais.php" class="btn btn-primary">Inserir</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+        </div>
+        <div class="col">
+            <div class="card h-100">
                 <img src="/recursos/img/pulu-cama.png" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Alojamentos<br>e<br>Restaurantes</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="/admin/editarAloj.php" class="btn btn-primary">Atualizar/Apagar</a>
-                    <a href="/admin/editarAloj.php" class="btn btn-primary">Inserir</a>
+                    <p class="card-text">Aqui irá gerir todos os Alojamentos e Restaurantes da cidade do Lubango.</p>
+                    <a href="/admin/aloj.php/editarAloj.php" class="btn btn-primary">Atualizar/Apagar</a>
+                    <a href="/admin/aloj.php/inserirAloj.php" class="btn btn-primary">Inserir</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="/recursos/img/blog.jpg" class="card-img-top">
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="/recursos/img/Blog_construcao-civil.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Blog</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Aqui irá gerir todos os Registos de Ocorrência.</p>
                     <a href="/admin/editarBlog.php" class="btn btn-primary">Atualizar/Apagar</a>
                     <a href="/admin/editarBlog.php" class="btn btn-primary">Inserir</a>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
 
     </div>
 

@@ -59,11 +59,11 @@ include_once __DIR__ . '/aplicacao/compunents/header.php';
     
 
       
-      <div class="text-black text-center p-3">
+      <div class="text-white text-center p-3">
         <p>Instituto Politécnico de Viana do Castelo</p>
         <p>Projeto Final de Programação Web</p>
         <p>Professores António José Viana, Marcelo Antunes Fernandes, Wenderson Wanzeller</p>
-        <a class="text-black" href="https://github.com/ruimendonca6" target="_blank">Rui Mendonça</a>
+        <a class="text-white" href="https://github.com/ruimendonca6" target="_blank">Rui Mendonça</a>
       </div>
     
     </footer>

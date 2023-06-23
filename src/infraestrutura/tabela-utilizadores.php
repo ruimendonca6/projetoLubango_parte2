@@ -100,7 +100,7 @@ $pdo->exec(
     'CREATE TABLE Locais_Turisticos(
         id INTEGER PRIMARY KEY,
         titulo CHAR NOT NULL,
-        img CHAR NULL,
+        img BLOB NULL,
         texto TEXT NOT NULL,
         links TEXT);'
 );
@@ -136,7 +136,7 @@ $pdo->exec(
     'CREATE TABLE Alojamentos_Restaurantes(
         id INTEGER PRIMARY KEY,
         titulo CHAR NOT NULL,
-        img CHAR NULL,
+        img BLOB NULL,
         texto TEXT NOT NULL,
         links TEXT);'
 );
@@ -171,7 +171,7 @@ $pdo->exec(
     'CREATE TABLE Blog(
         id INTEGER PRIMARY KEY,
         titulo CHAR NOT NULL,
-        img CHAR NULL,
+        img BLOB NULL,
         texto TEXT NOT NULL,
         links TEXT);'
 );

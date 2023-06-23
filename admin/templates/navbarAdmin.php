@@ -18,10 +18,10 @@ require_once __DIR__ . "/../../src/controlador/admin/controlar-admin.php";
                 <a class="nav-link2" href="/aplicacao/locais.php">LOCAIS TURÍSTICOS</a>
             </li>
             <li class="nav-item active text-black">
-                <a class="nav-link2 text-light" href="/aplicacao/alojamento.php">ALOJAMENTO E RESTAURANTES</a>
+                <a class="nav-link2 text-black" href="/aplicacao/alojamento.php">ALOJAMENTO E RESTAURANTES</a>
             </li>
             <li class="nav-item active text-black">
-                <a class="nav-link2 text-light" href="/aplicacao/blog.php">BLOG</a>
+                <a class="nav-link2 text-black" href="/aplicacao/blog.php">BLOG</a>
             </li>
             <li class="nav-item active text-black">    
                 <form action="../../src/controlador/aplicacao/controlar-autenticacao.php" method="post">

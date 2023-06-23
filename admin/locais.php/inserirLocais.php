@@ -11,7 +11,7 @@ require_once __DIR__ . '/../../aplicacao/compunents/header.php';
 <body>
     <?php
 
-    require_once __DIR__ . '/../../aplicacao/compunents/navbar.php'
+    require_once __DIR__ . '/../../admin/templates/navbarAdmin.php';
 
     ?>
 

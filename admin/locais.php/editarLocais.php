@@ -1,16 +1,16 @@
 <?php
 # INICIALIZA O REPOSITÓRIO
-require_once __DIR__ . '/../src/infraestrutura/repositorio-utilizador.php';
+require_once __DIR__ . '/../../src/infraestrutura/repositorio-utilizador.php';
 
 # MIDDLEWARE PARA GARANTIR QUE APENAS ADMNISTRADORES ACESSES ESTA PÁGINA
-require_once __DIR__ . '/../src/middleware/middleware-administrador.php';
+require_once __DIR__ . '/../../src/middleware/middleware-utilizador.php';
 
 # FAZ O CARREGAMENTO DE TODOS OS UTILIZADORES PARA MOSTRAR AO ADMINISTRADOR
 $utilizadores = lerTodosUtilizadores();
 
 # CARREGA O CABECALHO PADRÃO COM O TÍTULO
 $titulo = ' - Painel de Administração';
-require_once __DIR__ . '/templates/header.php';
+require_once __DIR__ . '/../templates/header.php';
 ?>
 
 <main class="bg-light">
@@ -58,24 +58,24 @@ require_once __DIR__ . '/templates/header.php';
         <tbody>
           <?php
           # VARRE TODOS OS UTILIZADORES PARA CONSTRUÇÃO DA TABELA
-          foreach ($utilizadores as $utilizador) {
+          foreach ($ as $infolocais) {
           ?>
             <tr>
-              <th scope="row"><?= $utilizador['nome'] ?></th>
-              <td><?= $utilizador['apelido'] ?></td>
-              <td><?= $utilizador['nif'] ?></td>
-              <td><?= $utilizador['telemovel'] ?></td>
-              <td><?= $utilizador['email'] ?></td>
-              <td><?= $utilizador['administrador'] == '1' ? 'Sim' : 'Não' ?></td>
+              <th scope="row"><?= $infolocais['nome'] ?></th>
+              <td><?= $infolocais['apelido'] ?></td>
+              <td><?= $infolocais['nif'] ?></td>
+              <td><?= $infolocais['telemovel'] ?></td>
+              <td><?= $infolocais['email'] ?></td>
+              <td><?= $infolocais['administrador'] == '1' ? 'Sim' : 'Não' ?></td>
               <td>
                 <div class="d-flex justify-content">
-                  <a href="/src/controlador/admin/controlar-utilizador.php?<?= 'utilizador=atualizar&id=' . $utilizador['id'] ?>"><button type="button" class="btn btn-primary me-2">Atualizar</button></a>
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#deletar<?= $utilizador['id'] ?>">Apagar</button>
+                  <a href="/src/controlador/admin/controlar-infolocais.php?<?= 'infolocais=atualizar&id=' . $infolocais['id'] ?>"><button type="button" class="btn btn-primary me-2">Atualizar</button></a>
+                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#deletar<?= $infolocais['id'] ?>">Apagar</button>
                 </div>
               </td>
             </tr>
             <!-- Modal -->
-            <div class="modal fade" id="deletar<?= $utilizador['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="deletar<?= $infolocais['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -87,7 +87,7 @@ require_once __DIR__ . '/templates/header.php';
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <a href="/src/controlador/admin/controlar-utilizador.php?<?= 'utilizador=deletar&id=' . $utilizador['id'] ?>"><button type="button" class="btn btn-danger">Confirmar</button></a>
+                    <a href="/src/controlador/admin/controlador-infolocais.php?<?= 'infolocais=deletar&id=' . $infolocais['id'] ?>"><button type="button" class="btn btn-danger">Confirmar</button></a>
                   </div>
                 </div>
               </div>
@@ -103,5 +103,5 @@ require_once __DIR__ . '/templates/header.php';
 </main>
 <?php
 # CARREGA O RODAPE PADRÃO
-require_once __DIR__ . '/templates/footer.php';
+require_once __DIR__ . '/../templates/footer.php';
 ?>

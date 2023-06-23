@@ -1,22 +1,23 @@
 <?php
 # INICIALIZA O REPOSITÓRIO
-require_once __DIR__ . '/../src/infraestrutura/repositorio-utilizador.php';
+require_once __DIR__ . '/../../src/infraestrutura/user.php';
 
 # MIDDLEWARE PARA GARANTIR QUE APENAS ADMNISTRADORES ACESSES ESTA PÁGINA
-require_once __DIR__ . '/../src/middleware/middleware-administrador.php';
+require_once __DIR__ . '/../../src/middleware/middleware-administrador.php';
 
 # FAZ O CARREGAMENTO DE TODOS OS UTILIZADORES PARA MOSTRAR AO ADMINISTRADOR
-$utilizadores = lerTodosUtilizadores();
+$utilizadores = lerAlojamento();
 
 # CARREGA O CABECALHO PADRÃO COM O TÍTULO
 $titulo = ' - Painel de Administração';
-require_once __DIR__ . '/templates/header.php';
+require_once __DIR__ . '/../../aplicacao/compunents/header.php';
+require_once __DIR__ . '/../../admin/templates/navbarAdmin.php';
 ?>
 
 <main class="bg-light">
   <section class="py-4">
     <div class="d-flex justify-content">
-      <a href="/admin/utilizador.php"><button class="btn btn-success px-4 me-2">Criar Alojamento ou Restaurante</button></a>
+      <a href="/admin/aloj.php/inserirAloj.php"><button class="btn btn-success px-4 me-2">Criar Alojamento ou Restaurante</button></a>
       <a href="/admin/Admin.php"><button class="btn btn-info px-2 me-2">Sair Administração</button></a>
       <form action="/src/controlador/aplicacao/controlar-autenticacao.php" method="post">
         <button class="btn btn-danger px-4" type="submit" name="utilizador" value="logout">Fazer Logout</button>
@@ -47,11 +48,10 @@ require_once __DIR__ . '/templates/header.php';
       <table class="table">
         <thead class="table-secondary">
           <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Localização</th>
+            <th scope="col">Título</th>
+            <th scope="col">Imagem</th>
             <th scope="col">Descrição</th>
-            <th scope="col">Telemóvel</th>
-            <th scope="col">Email</th>
+            <th scope="col">Links</th>
             <th scope="col">Gerenciar</th>
           </tr>
         </thead>
@@ -61,15 +61,13 @@ require_once __DIR__ . '/templates/header.php';
           foreach ($utilizadores as $utilizador) {
           ?>
             <tr>
-              <th scope="row"><?= $utilizador['nome'] ?></th>
-              <td><?= $utilizador['apelido'] ?></td>
-              <td><?= $utilizador['nif'] ?></td>
-              <td><?= $utilizador['telemovel'] ?></td>
-              <td><?= $utilizador['email'] ?></td>
-              <td><?= $utilizador['administrador'] == '1' ? 'Sim' : 'Não' ?></td>
+              <th scope="row"><?= $utilizador['titulo'] ?></th>
+              <td><?= $utilizador['img'] ?></td>
+              <td><?= $utilizador['texto'] ?></td>
+              <td><?= $utilizador['links'] ?></td>
               <td>
                 <div class="d-flex justify-content">
-                  <a href="/src/controlador/admin/controlar-utilizador.php?<?= 'utilizador=atualizar&id=' . $utilizador['id'] ?>"><button type="button" class="btn btn-primary me-2">Atualizar</button></a>
+                  <a href="/admin/aloj.php/AllAloj.php<?= 'utilizador=atualizar&id=' . $utilizador['id'] ?>"><button type="button" class="btn btn-primary me-2">Atualizar</button></a>
                   <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#deletar<?= $utilizador['id'] ?>">Apagar</button>
                 </div>
               </td>
@@ -103,5 +101,5 @@ require_once __DIR__ . '/templates/header.php';
 </main>
 <?php
 # CARREGA O RODAPE PADRÃO
-require_once __DIR__ . '/templates/footer.php';
+require_once __DIR__ . '/../../aplicacao/compunents/footer.php';
 ?>
