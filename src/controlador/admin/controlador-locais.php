@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . '../../../infrastructure/bd/user.php';
+require_once __DIR__ . '/../../infraestrutura/user.php';
 require_once __DIR__ . '/../../validacao/admin/validar-info.php';
-require_once __DIR__ . '../../../auxiliadores/auxiliador.php';
+require_once __DIR__ . '/../../auxiliadores/auxiliador.php';
 
 ##############
 ### VERBOS ###
@@ -45,7 +45,8 @@ if (isset($_GET['info'])) {
         # ENVIA PARÂMETROS COM DADOS DO UTILIZADOR PARA A PÁGINA UTILIZADOR RECUPERAR DADOS PARA MANIPULAR A ALTERAÇÃO
         $params = '?' . http_build_query($info);
 
-        header('location: /../../../admin/Ceia/Editar-Ceia.php' . $params);
+        header('location: /../../../admin/locais.php/editarLocais.php' . $params);
+        
     }
     ## CONTROLA A ROTA PARA A EXCLUSÃO DE UTILIZADORES
     if ($_GET['info'] == 'deletar') {
@@ -62,7 +63,7 @@ if (isset($_GET['info'])) {
             $_SESSION['sucesso'] = 'info deletado com sucesso!';
 
             # REDIRECIONA info COM DADOS DO FORMULÁRIO ANTERIORMENTE PREENCHIDO
-            header('location: /../../../admin/Ceia/All-Ceia.php');
+            header('location: /../../../admin/locais.php/AllLocais.php');
         }
     }
 }
@@ -94,7 +95,7 @@ function InserirInfo($requisicao)
         $params = '?' . http_build_query($requisicao);
 
         # REDIRECIONA UTILIZADOR COM DADOS DO FORMULÁRIO ANTERIORMENTE PREENCHIDO
-        header('location: /../../../admin/Ceia/All-Ceia.php' . $params);
+        header('location: /../../../admin/locais.php/AllLocais.php' . $params);
 
         return false;
     }
@@ -112,7 +113,7 @@ function InserirInfo($requisicao)
         $_SESSION['sucesso'] = 'Info criada com sucesso!';
 
         # REDIRECIONA O UTILIZADO PARA A PÁGINA ADMIN
-        header('location: /../../../admin/Ceia/InserirInformacoesCeia.php');
+        header('location: /../../../admin/locais.php/inserirLocais.php');
     }
 }
 
@@ -137,7 +138,7 @@ function AtualizarLocais($requisicao)
         $params = '?' . http_build_query($requisicao);
 
         # REDIRECIONA O USUÁRIO COM DADOS DO FORMULÁRIO ANTERIORMENTE PREENCHIDO
-        header('location: /../../../admin/Ceia/Editar-Ceia.php' . $params);
+        header('location: /../../../admin/locais.php/editarLocais.php' . $params);
 
         return false;
     }
@@ -166,7 +167,7 @@ function AtualizarLocais($requisicao)
         $params = '?' . http_build_query($dados);
 
         # REDIRECIONA O USUÁRIO COM DADOS DO FORMULÁRIO ANTERIORMENTE PREENCHIDO
-        header('location: /../../../admin/Ceia/Editar-Ceia.php' . $params);
+        header('location: /../../../admin/locais.php/editarLocais.php' . $params);
     }
 }
 
@@ -176,8 +177,8 @@ function AtualizarLocais($requisicao)
 function DeleteInfo($Info)
 {
     # DEFINE O CAMINHO DO FICHEIRO
-    $caminhoFicheiro = __DIR__ . '/../../../recursos/uploadsCeia';
-
+    $caminhoFicheiro = __DIR__ . '';
+require_once __DIR__ . '/../../../src/'
     # VALIDA DADOS DO UTILIZADOR
     $retorno = deleteInfos($Info['id']);
 

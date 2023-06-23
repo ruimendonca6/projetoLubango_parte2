@@ -110,6 +110,7 @@ echo 'Tabelo Locais_Turísticos criada!' . PHP_EOL;
 #INSERE UTILIZADOR
 $sqlCreate = "INSERT INTO
     Locais_Turisticos (
+        id,
         titulo,
         img,
         texto,
@@ -145,6 +146,7 @@ echo 'Tabelo Alojamentos_Restaurantes criada!' . PHP_EOL;
 #INSERE UTILIZADOR
 $sqlCreate = "INSERT INTO
     Alojamentos_Restaurantes (
+        id,
         titulo,
         img,
         texto,
@@ -179,6 +181,7 @@ echo 'Tabelo Blog criada!' . PHP_EOL;
 #INSERE UTILIZADOR
 $sqlCreate = "INSERT INTO
     Blog (
+        id,
         titulo,
         img,
         texto,
