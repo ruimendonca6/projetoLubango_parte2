@@ -16,8 +16,8 @@ require_once __DIR__ . '/templates/header.php';
 <main class="bg-light">
   <section class="py-4">
     <div class="d-flex justify-content">
-      <a href="/admin/utilizador.php"><button class="btn btn-success px-4 me-2">Criar Utilizador</button></a>
-      <a href="/aplicacao/"><button class="btn btn-info px-2 me-2">Sair Administração</button></a>
+      <a href="/admin/utilizador.php"><button class="btn btn-success px-4 me-2">Criar Alojamento ou Restaurante</button></a>
+      <a href="/admin/Admin.php"><button class="btn btn-info px-2 me-2">Sair Administração</button></a>
       <form action="/src/controlador/aplicacao/controlar-autenticacao.php" method="post">
         <button class="btn btn-danger px-4" type="submit" name="utilizador" value="logout">Fazer Logout</button>
       </form>
@@ -48,11 +48,10 @@ require_once __DIR__ . '/templates/header.php';
         <thead class="table-secondary">
           <tr>
             <th scope="col">Nome</th>
-            <th scope="col">Apelido</th>
-            <th scope="col">NIF</th>
+            <th scope="col">Localização</th>
+            <th scope="col">Descrição</th>
             <th scope="col">Telemóvel</th>
             <th scope="col">Email</th>
-            <th scope="col">Administrador</th>
             <th scope="col">Gerenciar</th>
           </tr>
         </thead>
@@ -80,11 +79,11 @@ require_once __DIR__ . '/templates/header.php';
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Apagar Utilizador</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Apagar Local</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    Esta operação não poderá ser desfeita. Tem certeza que deseja apagar este utilizador?
+                    Esta operação não poderá ser desfeita. Tem certeza que deseja apagar este Alojamento/Restaurate?
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -104,5 +103,5 @@ require_once __DIR__ . '/templates/header.php';
 </main>
 <?php
 # CARREGA O RODAPE PADRÃO
-require_once __DIR__ . '/templates/rodape.php';
+require_once __DIR__ . '/templates/footer.php';
 ?>

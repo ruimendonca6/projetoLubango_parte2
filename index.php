@@ -31,17 +31,17 @@ include_once __DIR__ . '/aplicacao/compunents/header.php';
 
 
       <div class="text-box  text-white text-center">
-        <h1>Visite o Lubango</h1>
-        <p>Venha conhecer a Cidade do Conhecimento e a sua rica cultura.</p>
-        <p>Para ter acesso a mais informações, tal como locais turísticos, alojamentos e restaurantes, crie a sua conta ou faça login.</p>
-        <a href="/aplicacao/login.php" button type="button" class="btn btn-outline-danger"> Login</button></a>
-        <a href="/aplicacao/registo.php" button type="button" class="btn btn-outline-warning">Criar Conta</button></a>
+        <h1 class="d-flex h justify-content-center text-white text-center p-4">Visite o Lubango</h1>
+        <p class="d-flex h justify-content-center text-white text-center p-4">Venha conhecer a Cidade do Conhecimento e a sua rica cultura.</p>
+        <p class="d-flex h justify-content-center text-white text-center p-4">Para ter acesso a mais informações, tal como locais turísticos, alojamentos e restaurantes, crie a sua conta ou faça login.</p>
+        <a href="/aplicacao/login.php" button type="button" class="btn btn-outline-danger"> LOGIN</button></a>
+        <a href="/aplicacao/registo.php" button type="button" class="btn btn-outline-warning">CRIAR CONTA</button></a>
       </div>
     </section>
     <footer class="text-center fixed-bottom">
-      <!-- Grid container -->
+     
       <div class="container p-4 pb-0 bottom">
-        <!-- Section: Social media -->
+       
         <section class="mb-4">
           <!-- Facebook -->
           <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/profile.php?id=100010214474906" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
@@ -54,18 +54,18 @@ include_once __DIR__ . '/aplicacao/compunents/header.php';
           <!-- Github -->
           <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/ruimendonca6" target="_blank" role="button"><i class="fab fa-github"></i></a>
         </section>
-        <!-- Section: Social media -->
+        
       </div>
-      <!-- Grid container -->
+    
 
-      <!-- Copyright -->
-      <div class="text-center text-white p-3">
+      
+      <div class="text-black text-center p-3">
         <p>Instituto Politécnico de Viana do Castelo</p>
         <p>Projeto Final de Programação Web</p>
         <p>Professores António José Viana, Marcelo Antunes Fernandes, Wenderson Wanzeller</p>
-        <a class="text-white" href="https://github.com/ruimendonca6" target="_blank">Rui Mendonça</a>
+        <a class="text-black" href="https://github.com/ruimendonca6" target="_blank">Rui Mendonça</a>
       </div>
-      <!-- Copyright -->
+    
     </footer>
 
   </main>

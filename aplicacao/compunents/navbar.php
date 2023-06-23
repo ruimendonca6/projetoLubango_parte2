@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . "/../../src/controlador/admin/controlar-utilizador.php"
+
+require_once __DIR__ . "/../../src/controlador/admin/controlar-admin.php";
 
 ?>
 
@@ -24,17 +25,17 @@ require_once __DIR__ . "/../../src/controlador/admin/controlar-utilizador.php"
             </li>
             <li class="nav-item active">    
             <form action="../../src/controlador/aplicacao/controlar-autenticacao.php" method="post">
-                    <button class="btn btn-outline-danger" type="submit" name="utilizador" value="logout">Logout</button>
+                    <button class="btn btn-outline-danger" type="submit" name="utilizador" value="logout">SAIR</button>
             </form>
             </li>
             <li class="nav-item active">
             <a href="/admin/Admin.php">
-            <button <?php #if ($isAdmin ? true : false) { echo 'style="display: none;"'; } ?>  class="btn btn-outline-warning" type="button">Painel de Controlo</button>
+            <button <?php if ($isAdmin ? true : false) { echo 'style="display: none;"'; } ?>  class="btn btn-outline-warning" type="button">PAINEL DE CONTROLO</button>
             </a>
           </li>
           <li class="nav-item">
             <a href="/aplicacao/perfil.php">
-              <button class="btn btn-outline-success" type="button">Edit Profile</button>
+              <button class="btn btn-outline-success" type="button">EDITAR PERFIL</button>
             </a>
           </li>
         </ul>

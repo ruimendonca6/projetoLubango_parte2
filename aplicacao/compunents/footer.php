@@ -1,4 +1,4 @@
-<footer class="text-center text-black">
+<footer class="text-center text-white">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
         <!-- Section: Social media -->
@@ -19,7 +19,7 @@
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center text-black p-3">
+    <div class="justify-content-center text-center text-white p-3">
         <p>Instituto Politécnico de Viana do Castelo</p>
         <p>Projeto Final de Programação Web</p>
         <p>Professores António José Viana, Marcelo Antunes Fernandes, Wenderson Wanzeller</p>

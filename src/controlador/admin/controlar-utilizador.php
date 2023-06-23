@@ -139,7 +139,7 @@ function criar($requisicao)
         $_SESSION['sucesso'] = 'Utilizador criado com sucesso!';
 
         # REDIRECIONA O UTILIZADO PARA A PÁGINA ADMIN
-        header("location: /../admin/");
+        header("location: /../../../admin/utilizador.php");
     }
 }
 

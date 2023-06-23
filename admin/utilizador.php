@@ -7,12 +7,12 @@ require_once __DIR__ . '/../src/middleware/middleware-administrador.php';
 
 # CARREGA O CABECALHO PADRÃO COM O TÍTULO
 $titulo = ' - Utilizador';
-require_once __DIR__ . '/templates/cabecalho.php';
+require_once __DIR__ . '/templates/header.php';
 ?>
 
 <main class="bg-light">
   <section class="py-4">
-    <a href="/admin/"><button type="button" class="btn btn-secondary px-5">Voltar</button></a>
+    <a href="/admin/Admin.php"><button type="button" class="btn btn-secondary px-5">Voltar</button></a>
   </section>
   <section>
     <?php
@@ -79,5 +79,5 @@ require_once __DIR__ . '/templates/cabecalho.php';
 </main>
 <?php
 # CARREGA O RODAPE PADRÃO
-require_once __DIR__ . '/templates/rodape.php';
+require_once __DIR__ . '/templates/footer.php';
 ?>

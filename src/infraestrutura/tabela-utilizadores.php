@@ -30,15 +30,15 @@ echo 'Tabela utilizadores criada!' . PHP_EOL;
 
 # ABAIXO UM ARRAY SIMULANDO A DADOS DE UM UTILIZADOR 
 $utilizador = [
-    'nome' => 'Wenderson',
-    'apelido' => 'Wanzeller',
-    'nif' => '294733167',
-    'telemovel' => '917315200',
-    'email' => 'wendersonwanzeller@estg.ipvc.pt',
+    'nome' => 'Rui',
+    'apelido' => 'Mendonça',
+    'nif' => '297364167',
+    'telemovel' => '928473647',
+    'email' => 'Rui@admin.pt',
     'foto' => null,
     'administrador' => true,
     'dono' => true,
-    'palavra_passe' => '123456'
+    'palavra_passe' => 'Rui1234'
 ];
 
 # CRIPTOGRAFA PALAVRA PASSE
